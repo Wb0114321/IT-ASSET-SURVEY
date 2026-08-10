@@ -1,37 +1,74 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
 
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
-    <meta name="theme-color" content="#0f172a">
+    <meta
+        name="theme-color"
+        content="#0f172a"
+    >
 
-    <title>IT Asset Survey</title>
+    <title>
+        IT Asset Survey
+    </title>
 
-    <link rel="stylesheet"
-          href="css/style.css">
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
 
     <!-- Barcode / QR Scanner -->
-    <script src="https://unpkg.com/html5-qrcode"
-            defer></script>
+
+    <script
+        src="https://unpkg.com/html5-qrcode"
+        defer
+    ></script>
 
 </head>
 
+
 <body>
+
 
 <div class="app">
 
-    <!-- HEADER -->
+
+    <!-- =================================================
+         HEADER
+    ================================================== -->
 
     <header class="app-header">
 
-        <div>
-            <h1>IT Asset Survey</h1>
-            <p>IT Asset Data Collection</p>
+        <div class="brand-area">
+
+            <div class="logo">
+                IT
+            </div>
+
+            <div>
+
+                <h1>
+                    IT Asset Survey
+                </h1>
+
+                <p>
+                    IT Asset Data Collection
+                </p>
+
+            </div>
+
         </div>
+
 
         <div class="header-icon">
             💻
@@ -40,36 +77,89 @@
     </header>
 
 
-    <!-- DASHBOARD -->
+
+    <!-- =================================================
+         STATS
+    ================================================== -->
 
     <section class="stats">
 
-        <div class="stat-card">
-            <span id="todayCount">0</span>
-            <small>Today's Collection</small>
-        </div>
 
         <div class="stat-card">
-            <span id="totalCount">0</span>
-            <small>Total Assets</small>
+
+            <div class="stat-icon">
+                📋
+            </div>
+
+            <div>
+
+                <span id="todayCount">
+                    0
+                </span>
+
+                <small>
+                    Today's Collection
+                </small>
+
+            </div>
+
         </div>
+
+
+
+        <div class="stat-card">
+
+            <div class="stat-icon">
+                💻
+            </div>
+
+            <div>
+
+                <span id="totalCount">
+                    0
+                </span>
+
+                <small>
+                    Total Assets
+                </small>
+
+            </div>
+
+        </div>
+
 
     </section>
 
 
-    <!-- FORM -->
+
+    <!-- =================================================
+         ASSET FORM
+    ================================================== -->
 
     <main class="card">
 
+
+        <!-- LOCATION -->
+
         <div class="section-title">
-            <span>📍</span>
-            Location Details
+
+            <span>
+                📍
+            </span>
+
+            <div>
+                Location Details
+            </div>
+
         </div>
 
 
         <div class="form-group">
 
-            <label>Department *</label>
+            <label>
+                Department *
+            </label>
+
 
             <select id="department">
 
@@ -77,127 +167,210 @@
                     Select Department
                 </option>
 
-                <option>IT</option>
-                <option>HR</option>
-                <option>Accounts</option>
-                <option>Transport</option>
-                <option>Operations</option>
-                <option>Purchase</option>
-                <option>Store</option>
-                <option>Finance</option>
-                <option>Security</option>
-                <option>Administration</option>
+                <option>
+                    IT
+                </option>
+
+                <option>
+                    HR
+                </option>
+
+                <option>
+                    Accounts
+                </option>
+
+                <option>
+                    Transport
+                </option>
+
+                <option>
+                    Operations
+                </option>
+
+                <option>
+                    Purchase
+                </option>
+
+                <option>
+                    Store
+                </option>
+
+                <option>
+                    Finance
+                </option>
+
+                <option>
+                    Security
+                </option>
+
+                <option>
+                    Administration
+                </option>
 
             </select>
 
         </div>
 
 
+
         <div class="grid">
 
+
             <div class="form-group">
 
-                <label>Location</label>
+                <label>
+                    Location
+                </label>
 
-                <input id="location"
-                       placeholder="e.g. Admin Building">
+                <input
+                    id="location"
+                    placeholder="e.g. Weighbridge 01"
+                >
 
             </div>
 
 
             <div class="form-group">
 
-                <label>Building</label>
+                <label>
+                    Building
+                </label>
 
-                <input id="building"
-                       placeholder="Building">
+                <input
+                    id="building"
+                    placeholder="Building"
+                >
 
             </div>
+
 
         </div>
 
 
+
         <div class="grid">
 
+
             <div class="form-group">
 
-                <label>Floor</label>
+                <label>
+                    Floor
+                </label>
 
-                <input id="floor"
-                       placeholder="Ground / 1st">
+                <input
+                    id="floor"
+                    placeholder="Ground / 1st"
+                >
 
             </div>
 
 
             <div class="form-group">
 
-                <label>Room / Area</label>
+                <label>
+                    Room / Area
+                </label>
 
-                <input id="room"
-                       placeholder="Room / Area">
+                <input
+                    id="room"
+                    placeholder="Room / Area"
+                >
 
             </div>
+
 
         </div>
 
 
-        <!-- EMPLOYEE -->
+
+        <!-- USER -->
 
         <div class="section-title">
 
-            <span>👤</span>
-            User Details
+            <span>
+                👤
+            </span>
+
+            <div>
+                User Details
+            </div>
 
         </div>
+
 
 
         <div class="form-group">
 
-            <label>Employee Name</label>
+            <label>
+                Employee Name
+            </label>
 
-            <input id="employeeName"
-                   placeholder="Employee Name">
+            <input
+                id="employeeName"
+                placeholder="Employee Name"
+            >
 
         </div>
+
 
 
         <div class="grid">
 
+
             <div class="form-group">
 
-                <label>Employee ID</label>
+                <label>
+                    Employee ID
+                </label>
 
-                <input id="employeeId"
-                       placeholder="Employee ID">
+                <input
+                    id="employeeId"
+                    placeholder="Employee ID"
+                >
 
             </div>
 
 
             <div class="form-group">
 
-                <label>Designation</label>
+                <label>
+                    Designation
+                </label>
 
-                <input id="designation"
-                       placeholder="Designation">
+                <input
+                    id="designation"
+                    placeholder="Designation"
+                >
 
             </div>
+
 
         </div>
+
 
 
         <!-- ASSET -->
 
         <div class="section-title">
 
-            <span>💻</span>
-            Asset Details
+            <span>
+                💻
+            </span>
+
+            <div>
+                Asset Details
+            </div>
 
         </div>
 
 
+
         <div class="form-group">
 
-            <label>Asset Type *</label>
+            <label>
+                Asset Type *
+            </label>
+
 
             <select id="assetType">
 
@@ -205,53 +378,116 @@
                     Select Asset Type
                 </option>
 
-                <option>Desktop</option>
-                <option>Laptop</option>
-                <option>Monitor</option>
-                <option>Printer</option>
-                <option>Scanner</option>
-                <option>Server</option>
-                <option>Network Switch</option>
-                <option>Router</option>
-                <option>Firewall</option>
-                <option>UPS</option>
-                <option>CCTV Camera</option>
-                <option>NVR</option>
-                <option>Biometric</option>
-                <option>Projector</option>
-                <option>Other</option>
+                <option>
+                    Desktop
+                </option>
+
+                <option>
+                    Laptop
+                </option>
+
+                <option>
+                    Monitor
+                </option>
+
+                <option>
+                    Printer
+                </option>
+
+                <option>
+                    Scanner
+                </option>
+
+                <option>
+                    Server
+                </option>
+
+                <option>
+                    Network Switch
+                </option>
+
+                <option>
+                    Router
+                </option>
+
+                <option>
+                    Firewall
+                </option>
+
+                <option>
+                    UPS
+                </option>
+
+                <option>
+                    CCTV Camera
+                </option>
+
+                <option>
+                    NVR
+                </option>
+
+                <option>
+                    Biometric
+                </option>
+
+                <option>
+                    Projector
+                </option>
+
+                <option>
+                    Other
+                </option>
 
             </select>
 
         </div>
 
 
+
         <div class="form-group">
 
-            <label>Asset Tag</label>
+            <label>
+                Asset Tag
+            </label>
 
-            <input id="assetTag"
-                   placeholder="Asset Tag">
+            <input
+                id="assetTag"
+                placeholder="Asset Tag"
+            >
 
         </div>
+
 
 
         <!-- SERIAL -->
 
         <div class="form-group">
 
-            <label>Serial Number *</label>
+            <label>
+                Serial Number *
+            </label>
+
 
             <div class="scan-row">
 
-                <input id="serialNumber"
-                       placeholder="Enter or scan serial number">
+                <input
+                    id="serialNumber"
+                    placeholder="Enter or scan serial number"
+                    autocomplete="off"
+                >
 
-                <button type="button"
-                        class="scan-btn"
-                        onclick="openScanner()">
 
-                    📷 Scan
+                <button
+                    type="button"
+                    class="scan-btn"
+                    onclick="openScanner()"
+                >
+
+                    📷
+
+                    <span>
+                        Scan
+                    </span>
 
                 </button>
 
@@ -260,304 +496,493 @@
         </div>
 
 
+
         <!-- SCANNER -->
 
-        <div id="scannerBox"
-             class="scanner-box">
+        <div
+            id="scannerBox"
+            class="scanner-box"
+        >
 
-            <div id="reader"></div>
+            <div
+                class="scanner-title"
+            >
 
-            <button type="button"
-                    class="close-scan"
-                    onclick="closeScanner()">
+                Scan Barcode / QR
 
-                Close Scanner
+            </div>
+
+
+            <div
+                id="reader"
+            ></div>
+
+
+            <button
+                type="button"
+                class="close-scan"
+                onclick="closeScanner()"
+            >
+
+                ✕ Close Scanner
 
             </button>
 
         </div>
 
 
+
         <div class="grid">
 
+
             <div class="form-group">
 
-                <label>Brand</label>
+                <label>
+                    Brand
+                </label>
 
-                <input id="brand"
-                       placeholder="Dell / HP / Lenovo">
+                <input
+                    id="brand"
+                    placeholder="Dell / HP / Lenovo"
+                >
 
             </div>
 
 
             <div class="form-group">
 
-                <label>Model</label>
+                <label>
+                    Model
+                </label>
 
-                <input id="model"
-                       placeholder="Model">
+                <input
+                    id="model"
+                    placeholder="Model"
+                >
 
             </div>
+
 
         </div>
+
 
 
         <!-- NETWORK -->
 
         <div class="section-title">
 
-            <span>🌐</span>
-            Network Details
+            <span>
+                🌐
+            </span>
+
+            <div>
+                Network Details
+            </div>
 
         </div>
+
 
 
         <div class="form-group">
 
-            <label>Hostname</label>
+            <label>
+                Hostname
+            </label>
 
-            <input id="hostname"
-                   placeholder="PC-HOSTNAME">
+            <input
+                id="hostname"
+                placeholder="PC-HOSTNAME"
+            >
 
         </div>
+
 
 
         <div class="grid">
 
+
             <div class="form-group">
 
-                <label>IP Address</label>
+                <label>
+                    IP Address
+                </label>
 
-                <input id="ipAddress"
-                       placeholder="192.168.x.x">
+                <input
+                    id="ipAddress"
+                    placeholder="192.168.x.x"
+                >
 
             </div>
 
 
             <div class="form-group">
 
-                <label>MAC Address</label>
+                <label>
+                    MAC Address
+                </label>
 
-                <input id="macAddress"
-                       placeholder="00:11:22:33:44:55">
+                <input
+                    id="macAddress"
+                    placeholder="00:11:22:33:44:55"
+                >
 
             </div>
+
 
         </div>
+
 
 
         <!-- CONFIG -->
 
         <div class="section-title">
 
-            <span>⚙️</span>
-            System Configuration
+            <span>
+                ⚙️
+            </span>
+
+            <div>
+                System Configuration
+            </div>
 
         </div>
+
 
 
         <div class="form-group">
 
-            <label>Operating System</label>
+            <label>
+                Operating System
+            </label>
 
-            <input id="operatingSystem"
-                   placeholder="Windows 11 Pro">
+            <input
+                id="operatingSystem"
+                placeholder="Windows 10 / Windows 11"
+            >
 
         </div>
+
 
 
         <div class="form-group">
 
-            <label>Processor</label>
+            <label>
+                Processor
+            </label>
 
-            <input id="processor"
-                   placeholder="Intel Core i5">
+            <input
+                id="processor"
+                placeholder="Intel Core i5"
+            >
 
         </div>
+
 
 
         <div class="grid">
 
+
             <div class="form-group">
 
-                <label>RAM</label>
+                <label>
+                    RAM
+                </label>
 
-                <input id="ram"
-                       placeholder="16 GB">
+                <input
+                    id="ram"
+                    placeholder="16 GB"
+                >
 
             </div>
 
 
             <div class="form-group">
 
-                <label>Storage</label>
+                <label>
+                    Storage
+                </label>
 
-                <input id="storage"
-                       placeholder="512 GB SSD">
+                <input
+                    id="storage"
+                    placeholder="512 GB SSD"
+                >
 
             </div>
 
+
         </div>
+
 
 
         <div class="form-group">
 
-            <label>Graphics</label>
+            <label>
+                Graphics
+            </label>
 
-            <input id="graphics"
-                   placeholder="Intel UHD / NVIDIA">
+            <input
+                id="graphics"
+                placeholder="Intel UHD / NVIDIA"
+            >
 
         </div>
+
 
 
         <div class="form-group">
 
-            <label>Configuration / Specification</label>
+            <label>
+                Configuration / Specification
+            </label>
 
-            <textarea id="configuration"
-                      rows="3"
-                      placeholder="Complete configuration"></textarea>
+            <textarea
+                id="configuration"
+                rows="3"
+                placeholder="Complete configuration"
+            ></textarea>
 
         </div>
+
 
 
         <!-- CONDITION -->
 
         <div class="section-title">
 
-            <span>🔧</span>
-            Condition
+            <span>
+                🔧
+            </span>
+
+            <div>
+                Condition
+            </div>
 
         </div>
+
 
 
         <div class="grid">
 
+
             <div class="form-group">
 
-                <label>Working Status</label>
+                <label>
+                    Working Status
+                </label>
 
-                <select id="workingStatus">
+
+                <select
+                    id="workingStatus"
+                >
 
                     <option value="">
                         Select
                     </option>
 
-                    <option>Working</option>
-                    <option>Not Working</option>
-                    <option>Partially Working</option>
+                    <option>
+                        Working
+                    </option>
+
+                    <option>
+                        Not Working
+                    </option>
+
+                    <option>
+                        Partially Working
+                    </option>
 
                 </select>
 
             </div>
 
 
+
             <div class="form-group">
 
-                <label>Physical Condition</label>
+                <label>
+                    Physical Condition
+                </label>
 
-                <select id="physicalCondition">
+
+                <select
+                    id="physicalCondition"
+                >
 
                     <option value="">
                         Select
                     </option>
 
-                    <option>New</option>
-                    <option>Good</option>
-                    <option>Fair</option>
-                    <option>Poor</option>
-                    <option>Damaged</option>
+                    <option>
+                        New
+                    </option>
+
+                    <option>
+                        Good
+                    </option>
+
+                    <option>
+                        Fair
+                    </option>
+
+                    <option>
+                        Poor
+                    </option>
+
+                    <option>
+                        Damaged
+                    </option>
 
                 </select>
 
             </div>
 
+
         </div>
+
 
 
         <div class="form-group">
 
-            <label>Damage Details</label>
+            <label>
+                Damage Details
+            </label>
 
-            <textarea id="damageDetails"
-                      rows="2"
-                      placeholder="If damaged, describe"></textarea>
+            <textarea
+                id="damageDetails"
+                rows="2"
+                placeholder="If damaged, describe"
+            ></textarea>
 
         </div>
+
 
 
         <div class="form-group">
 
-            <label>Remarks</label>
+            <label>
+                Remarks
+            </label>
 
-            <textarea id="remarks"
-                      rows="3"
-                      placeholder="Additional remarks"></textarea>
+            <textarea
+                id="remarks"
+                rows="3"
+                placeholder="Additional remarks"
+            ></textarea>
 
         </div>
+
 
 
         <!-- SAVE -->
 
-        <button class="save-btn"
-                onclick="saveAsset()">
+        <button
+            class="save-btn"
+            onclick="saveAsset()"
+        >
 
             💾 SAVE ASSET
 
         </button>
 
 
-        <button class="reset-btn"
-                onclick="resetForm()">
 
-            Reset Form
+        <button
+            class="reset-btn"
+            onclick="resetForm()"
+        >
+
+            ↻ Reset Form
 
         </button>
+
 
     </main>
 
 
-    <!-- SEARCH -->
+
+    <!-- =================================================
+         SEARCH
+    ================================================== -->
 
     <section class="card search-card">
 
+
         <div class="section-title">
 
-            <span>🔍</span>
-            Search Asset
+            <span>
+                🔍
+            </span>
+
+            <div>
+                Search Asset
+            </div>
 
         </div>
 
 
+
         <div class="search-row">
 
-            <input id="searchInput"
-                   placeholder="Serial / Asset Tag / Employee">
+            <input
+                id="searchInput"
+                placeholder="Serial / Asset Tag / Employee / Hostname"
+            >
 
-            <button onclick="searchAsset()">
+
+            <button
+                onclick="searchAsset()"
+            >
+
                 Search
+
             </button>
 
         </div>
 
 
-        <div id="searchResults"></div>
+
+        <div
+            id="searchResults"
+        ></div>
+
 
     </section>
 
 
+
     <!-- TOAST -->
 
-    <div id="toast"
-         class="toast"></div>
+    <div
+        id="toast"
+        class="toast"
+    ></div>
 
 
 </div>
 
 
-<script src="js/config.js"></script>
-<script src="js/api.js"></script>
-<script src="js/app.js"></script>
+
+<!-- =====================================================
+     SCRIPTS
+====================================================== -->
+
+<script
+    src="https://unpkg.com/html5-qrcode"
+    defer
+></script>
+
+<script
+    src="js/config.js"
+></script>
+
+<script
+    src="js/api.js"
+></script>
+
+<script
+    src="js/app.js"
+></script>
+
 
 </body>
 
